@@ -1,0 +1,6 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+  <node pkg="safety_node" type="main.py" name="safety_node">
+  </node>
+  
+</launch>
