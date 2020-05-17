@@ -4,17 +4,17 @@
 
 This is a template: replace, remove, and add where required. Describe here what this package does and what it's meant for in a few sentences.
 
-**Keywords:** example, package, template
+<!-- **Keywords:** ros, lidar -->
 
-### License
+<!-- ### License -->
 
-The source code is released under a [BSD 3-Clause license](ros_package_template/LICENSE).
+<!-- The source code is released under a [BSD 3-Clause license](ros_package_template/LICENSE). -->
 
-**Author: Péter Fankhauser<br />
-Affiliation: [ANYbotics](https://www.anybotics.com/)<br />
-Maintainer: Péter Fankhauser, pfankhauser@anybotics.com**
+**Author: None<br />
+<!-- Affiliation: [ANYbotics](https://www.anybotics.com/)<br /> -->
+Maintainer: [Kumar](harshil912@gmail.com)
 
-The PACKAGE NAME package has been tested under [ROS] Indigo and Ubuntu 14.04. This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
+The PACKAGE NAME package has been tested under [ROS] Kinetic and Ubuntu 16.04. This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
 
 [![Build Status](http://rsl-ci.ethz.ch/buildStatus/icon?job=ros_best_practices)](http://rsl-ci.ethz.ch/job/ros_best_practices/)
 
@@ -24,7 +24,7 @@ The PACKAGE NAME package has been tested under [ROS] Indigo and Ubuntu 14.04. Th
 
 ### Publications
 
-If you use this work in an academic context, please cite the following publication(s):
+<!-- If you use this work in an academic context, please cite the following publication(s):
 
 * P. Fankhauser, M. Bloesch, C. Gehring, M. Hutter, and R. Siegwart: **PAPER TITLE**. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2015. ([PDF](http://dx.doi.org/10.3929/ethz-a-010173654))
 
@@ -34,7 +34,7 @@ If you use this work in an academic context, please cite the following publicati
             title = {{PAPER TITLE}},
             publisher = {IEEE},
             year = {2015}
-        }
+        } -->
 
 
 ## Installation
@@ -43,7 +43,7 @@ If you use this work in an academic context, please cite the following publicati
 
 To install all packages from the this repository as Debian packages use
 
-    sudo apt-get install ros-indigo-...
+<!-- sudo apt-get install ros-indigo-... -->
 
 ### Building from Source
 
@@ -52,7 +52,7 @@ To install all packages from the this repository as Debian packages use
 - [Robot Operating System (ROS)](http://wiki.ros.org) (middleware for robotics),
 - [Eigen] (linear algebra library)
 
-		sudo apt-get install libeigen3-dev
+	<!-- sudo apt-get install libeigen3-dev -->
 
 
 #### Building
@@ -60,36 +60,36 @@ To install all packages from the this repository as Debian packages use
 To build from source, clone the latest version from this repository into your catkin workspace and compile the package using
 
 	cd catkin_workspace/src
-	git clone https://github.com/ethz-asl/ros_package_template.git
+	git clone https://github.com/uta-autonomous-vehicle/safety_node.git
 	cd ../
-	catkin_make
+	catkin_make_isolated
 
 
 ### Unit Tests
 
 Run the unit tests with
 
-	catkin_make run_tests_ros_package_template
+<!-- catkin_make run_tests_ros_package_template -->
 
 
 ## Usage
 
-Describe the quickest way to run this software, for example:
+<!-- Describe the quickest way to run this software, for example: -->
 
-Run the main node with
+<!-- Run the main node with -->
 
-	roslaunch ros_package_template ros_package_template.launch
+<!-- roslaunch ros_package_template ros_package_template.launch -->
 
 ## Config files
-
+<!-- 
 Config file folder/set 1
 
 * **config_file_1.yaml** Shortly explain the content of this config file
 
-Config file folder/set 2
+Config file folder/set 2 -->
 
 * **...**
-
+<!-- 
 ## Launch files
 
 * **launch_file_1.launch:** shortly explain what is launched (e.g standard simulation, simulation with gdb,...)
@@ -102,11 +102,11 @@ Config file folder/set 2
 
     - **`...`**
 
-* **...**
+* **...** -->
 
 ## Nodes
 
-### ros_package_template
+<!-- ### ros_package_template
 
 Reads temperature measurements and computed the average.
 
@@ -145,7 +145,7 @@ Reads temperature measurements and computed the average.
 
 ### NODE_B_NAME
 
-...
+... -->
 
 
 ## Bugs & Feature Requests
