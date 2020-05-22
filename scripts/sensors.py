@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import rospy
 from datetime import datetime
-from sensor_msgs.msg import LaserScan
+from sensor_msgs.msg import LaserScan, PointCloud2, Image
 from std_msgs import msg
 import os, cv2 as cv, pdb, message_filters, numpy as np, time
 
@@ -46,6 +46,23 @@ class SensorNode:
 
         return
     
+    def sensor_msg_depth_image(self, data):
+        # print "shape is %s %s" % (data.height, data.width)
+        
+        # cloud = np.frombuffer(data.data, dtype=np.uint8).reshape(data.height, data.width, -1)
+        # print cloud.shape
+
+        return
+    
+    def sensor_msg_point_cloud(self, data):
+        
+        # cloud = np.frombuffer(data.data, dtype=np.uint8).reshape(data.height, data.width, -1)
+        # print cloud.shape
+        return
+
     def initiate_listening(self):
         rospy.Subscriber("/scan", LaserScan, self.scan_message)
+        rospy.Subscriber("/zed/depth/depth_registered", Image, self.sensor_msg_depth_image)
+        rospy.Subscriber("/zed/point_cloud/cloud_registered", PointCloud2, self.sensor_msg_point_cloud)
         self.message_pub = rospy.Publisher("/safety_node/safety", msg.Bool, queue_size=10)
+        
