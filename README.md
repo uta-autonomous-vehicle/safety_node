@@ -150,7 +150,7 @@ Reads temperature measurements and computed the average.
 
 ## Bugs & Feature Requests
 
-Please report bugs and request features using the [Issue Tracker](https://github.com/ethz-asl/ros_best_practices/issues).
+<!-- Please report bugs and request features using the [Issue Tracker](https://github.com/ethz-asl/ros_best_practices/issues). -->
 
 
 [ROS]: http://www.ros.org
